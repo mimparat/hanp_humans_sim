@@ -939,7 +939,7 @@ bool MoveHumans::clearCostmapsService(std_srvs::Empty::Request &req,
 bool MoveHumans::followExternalPaths(std_srvs::SetBool::Request &req,
                                      std_srvs::SetBool::Response &res) {
   std::string message = req.data ? "F" : "Not f";
-  message += "ollowing external paths";
+  message += "following external paths";
   ROS_INFO_NAMED(NODE_NAME, "%s", message.c_str());
   res.success = true;
   res.message = message;
